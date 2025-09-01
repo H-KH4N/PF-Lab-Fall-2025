@@ -20,4 +20,5 @@ Teacher: Kinza Khan
 - [x] . complete
 - [ ] . incomplete
 - [ ] . done js \
-![tupac](https://walkoffame.com/wp-content/uploads/2023/05/Image-scaled-750x500.jpeg)
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/f9196286-cc67-4688-9376-0e9f2c7985e2" /> \
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nYCtK12gj_DBjGLsN1ncSTZhnEcEumOwYQ&s)
