@@ -29,3 +29,27 @@ int* shuffle(int* nums, int numsSize, int n, int* returnSize) {
     nums = num;
     return nums;
 }
+
+3467. Transform Array by Parity
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* transformArray(int* nums, int numsSize, int* returnSize) {
+    *returnSize = numsSize;
+    int count0 = 0, count1 = 0;
+    for(int x = 0; x < numsSize; x++){
+        if(nums[x] % 2 == 0){
+            count0 +=1;
+        }
+        else if(nums[x] % 2 == 1){
+            count1 += 1;
+        }
+    }
+    for(int x = 0; x < count0; x++){
+        nums[x] = 0;
+    }
+    for(int x = count0; x < numsSize; x++){
+        nums[x] = 1;
+    }
+    return nums;
+}
