@@ -9,3 +9,23 @@ int* runningSum(int* nums, int numsSize, int* returnSize) {
     *returnSize = numsSize;
     return nums;
 }
+
+1470. Shuffle the Array
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* shuffle(int* nums, int numsSize, int n, int* returnSize) {
+    int num[numsSize] = {};
+    int j = 0;
+    
+    for(int x = 0; x < numsSize/2 ; x++){
+        num[j] = nums[x];
+        j += 1;
+        num[j] = nums[n];
+        j += 1;
+        n++; 
+    }
+    *returnSize = numsSize;
+    nums = num;
+    return nums;
+}
