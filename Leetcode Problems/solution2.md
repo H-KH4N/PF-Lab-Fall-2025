@@ -36,3 +36,14 @@ void reverseString(char* s, int sSize) {
 }
 
 26. Remove Duplicates from Sorted Array
+int removeDuplicates(int* nums, int numsSize) {
+    int k = 1;
+    if(numsSize == 0){return 0;}
+    for(int x = 1; x < numsSize; x++){
+        if(nums[x] != nums[x - 1]){
+            nums[k] = nums[x];
+            k++;
+        }  
+    }
+    return k;
+}
